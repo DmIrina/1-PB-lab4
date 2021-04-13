@@ -1,12 +1,18 @@
 package com.example.lab4.model;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Objects;
 
-public class Actor {
+public class Actor implements Serializable {
 
     private String name;
     private HashSet<Movie> movies;
+
+    public Actor(){
+        this.name = "name";
+        this.movies = new HashSet<>();
+    }
 
     public Actor(String name){
         this.name = name;

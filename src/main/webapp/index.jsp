@@ -5,11 +5,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Main page</title>
 </head>
 <body>
-    <h1><%= "Hello World!" %></h1>
     <br/>
-    <a href="hello-servlet">Hello Servlet</a>
+    <h2><a href="actors">All actors</a></h2>
+    <h2><a href="unemployed">Unemployed actors</a></h2>
+    <h2><a href="bestmovie">Movie with max actors cast</a></h2>
+
+    <form action="partners" method="post">
+        <h2>Search for actors who played with: <input type="text" name="name"/>
+        <input type="submit" value="Find"/></h2>
+    </form>
 </body>
 </html>
